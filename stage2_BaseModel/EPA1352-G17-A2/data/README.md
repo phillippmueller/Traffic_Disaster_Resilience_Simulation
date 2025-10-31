@@ -1,20 +1,6 @@
 # Data for Model Generation of Simple Transport Model Demo in MESA
 
-Created by: 
-Yilin HUANG 
-
-Modified by:
-Group 17
-
-Email:
-y.huang@tudelft.nl
-
-Version:
-1.1
-
-## Introduction
-
-This extension of the simple transport model demo, see [../model/model.py](../model/model.py) for EPA1352 Advanced Simulation course Assignment 2, takes a `csv` input data file that specifies the infrastructure model components to be generated. The data format used is described here. 
+This extension of the simple transport model demo, see [../model/model.py](../model/model.py) takes a `csv` input data file that specifies the infrastructure model components to be generated. The data format used is described below.
 
 ## Format
 
