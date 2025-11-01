@@ -1,3 +1,5 @@
+# Stress-Testing Bangladesh’s Roads for Disaster Readiness – An Agent-Based Network Simulation 
+
 ### Project Summary
 
 This project builds a single, end-to-end, data-driven workflow to assess the resilience of Bangladesh’s transport network and to inform policy on where to reinforce, maintain, or monitor roads and bridges. We begin by diagnosing and repairing critical inconsistencies in the national road and bridge datasets (RMMS/BMMS)—notably coordinate errors, chainage/LRP mismatches, and misaligned bridge locations—then regenerate the canonical road and bridge files used by the modelling stack ( _roads.tcv, BMMS_Overview.xlsx). This establishes a trustworthy data foundation for all downstream analysis.      
