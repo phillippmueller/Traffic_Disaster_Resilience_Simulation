@@ -17,17 +17,7 @@ This repository provides an end‑to‑end workflow to evaluate **transport netw
 
 ---
 
-> Total files indexed: **5931**
-
-Notable items:
-- **Python modules & scripts**: Traffic_Disaster_Resilience_Simulation
-- **Notebooks**: 14 detected
-- **Data-related paths**: Traffic_Disaster_Resilience_Simulation
-- **Configs/diagrams**: —
-
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### 1) Create an environment
 ```bash
@@ -116,14 +106,9 @@ xlrd==2.0.1
 zipp==3.4.0
 ```
 
-> If GeoPandas is used, you may need OS packages for GEOS/PROJ. See GeoPandas docs for your platform.
-
-### 3) Prepare data
-Place required input files under the appropriate folders (see **Project Structure**). If sample data are included, you can run the defaults out‑of‑the‑box.
-
 ---
 
-## 🧩 How It Works (Conceptual)
+## How It Works 
 
 1. **Load network & demand** — Read a road/rail graph (edges with length, free‑flow speed/capacity) and OD demand (agents or flows).
 2. **Apply disaster scenario** — Mark edges/nodes with failure states or capacity multipliers (0–100%). Optionally time‑varying.
@@ -133,30 +118,8 @@ Place required input files under the appropriate folders (see **Project Structur
 
 ---
 
-## ⚙️ Configuration
-Adjust scenario and model parameters via config files or script constants. Typical controls include:
-- **Hazard intensity & footprint**
-- **Failure probability per link / capacity scalars**
-- **OD demand scaling**
-- **Agent routing logic & replanning frequency**
-- **KPIs to compute and save**
-
----
-
-## 🏃 Run the Simulation
-```bash
-python run_simulation.py  # or open notebooks under `notebooks/` and run top‑down
-```
-
-Outputs are typically written under `results/` or `outputs/`. Plots (PNG/SVG) go to `figures/` or `plots/`.
-
----
-
 ## 📊 Outputs
 - `results/*.csv` — KPIs per scenario (e.g., mean travel time, % disconnected OD pairs, unmet demand).
 - `results/critical_links.csv` — sorted list of links by criticality metric (if computed).
 - `logs/run_*.txt` — reproducibility log (seed, config hash, git commit if available).
 - `figures/*.png` — maps/plots of disruption and performance.
-
----
-
